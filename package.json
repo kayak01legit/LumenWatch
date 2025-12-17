@@ -1,0 +1,42 @@
+{
+  "name": "lumen-watch",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "LumenWatch – lightweight TypeScript/Vite project with Coinbase ecosystem integrations.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@coinbase/onchainkit": "^1.1.0",
+    "@coinbase/smart-wallet": "^0.6.0",
+    "@coinbase/x402": "^2.0.0",
+    "@coinbase/cdp-sdk": "^1.1.1",
+    "viem": "^2.21.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  },
+  "dependencyDescriptions": {
+    "@coinbase/onchainkit": {
+      "repo": "coinbase/onchainkit",
+      "why": "UI-хелперы и ончейн-компоненты для Base-first приложений."
+    },
+    "@coinbase/smart-wallet": {
+      "repo": "coinbase/smart-wallet",
+      "why": "SDK для работы со smart wallet / account abstraction сценариями."
+    },
+    "@coinbase/x402": {
+      "repo": "coinbase/x402",
+      "why": "HTTP-native x402 payment flow для платных и gated API."
+    },
+    "@coinbase/cdp-sdk": {
+      "repo": "coinbase/cdp-sdk",
+      "why": "Доступ к сервисам Coinbase Developer Platform (ключи, проекты, метаданные)."
+    }
+  }
+}
